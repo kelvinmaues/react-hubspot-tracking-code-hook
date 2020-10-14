@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect } from "react";
-import { IMethodParam, IPropsUseTrackingCode, ISetIdentity } from "../models";
+import { useCallback, useEffect } from "react";
+import { IMethodParam, IPropsUseTrackingCode } from "../models";
 
 /**
  * TODO:
@@ -20,7 +20,7 @@ declare global {
  * The shape of the hook
  */
 export type IUseTrackingCode = {
-  setPathPageView: (oath: string) => void;
+  setPathPageView: (path: string) => void;
   setTrackPageView: () => void;
   setIdentity: (email: string, customPropertities?: {}) => void;
 };

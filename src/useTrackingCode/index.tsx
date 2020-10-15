@@ -1,5 +1,4 @@
-import { useCallback, useEffect } from "react";
-import { IMethodParam, IPropsUseTrackingCode } from "../models";
+import { IMethodParam } from "../models";
 
 /**
  * TODO:
@@ -25,24 +24,19 @@ export type IUseTrackingCode = {
   setIdentity: (email: string, customPropertities?: {}) => void;
 };
 
-const useTrackingCode = ({
-  initialPath,
-}: IPropsUseTrackingCode): IUseTrackingCode => {
+const useTrackingCode = (): IUseTrackingCode => {
   const _hsq = window._hsq || [];
 
-  const setTrackPageView = useCallback(() => {
+  const setTrackPageView = () => {
     _hsq.push(["trackPageView"]);
-  }, [_hsq]);
+  };
 
-  const setPathPageView = useCallback(
-    (path: string): void => {
-      // This function updates the path
-      _hsq.push(["setPath", path]);
-      // This function track the current updated page path
-      setTrackPageView();
-    },
-    [_hsq, setTrackPageView]
-  );
+  const setPathPageView = (path: string): void => {
+    // This function updates the path
+    _hsq.push(["setPath", path]);
+    // This function track the current updated page path
+    setTrackPageView();
+  };
 
   const setIdentity = (email: string, customPropertities?: {}) => {
     _hsq.push([
@@ -53,15 +47,6 @@ const useTrackingCode = ({
       },
     ]);
   };
-
-  /**
-   * It should push the set path before
-   * the tracking code loads to set the URL
-   * that gets tracked for the first page view
-   */
-  useEffect(() => {
-    setPathPageView(initialPath);
-  }, [initialPath, setPathPageView]);
 
   return { setPathPageView, setTrackPageView, setIdentity };
 };

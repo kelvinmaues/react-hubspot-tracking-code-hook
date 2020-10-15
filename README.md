@@ -1,8 +1,81 @@
 # React HubSpot Tracking Code Hook
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 A custom hook to use the HubSpot Tracking Code API function.
+
+With this custom hook, you can easily use the [HubSpot Tracking Code API](https://developers.hubspot.com/docs/api/events/tracking-code) function.
+
+## Features
+
+- [x] Set Page Path
+- [x] Track Page View
+- [x] Identify a visitor
+
+## Guide
+
+- [React HubSpot Tracking Code Hook](#react-hubspot-tracking-code-hook)
+  - [Features](#features)
+  - [Guide](#guide)
+  - [Installation](#installation)
+  - [How to use](#how-to-use)
+      - [Basic](#basic)
+  - [API](#api)
+  - [License](#license)
+  - [Contributors ✨](#contributors-)
+
+## Installation
+
+First step, install the HubSpot tracking code in your React project following the [HubSpot documentation](https://knowledge.hubspot.com/reports/install-the-hubspot-tracking-code) about it.
+
+_Tips: You can copy and paste the script code directly in the `public/index.html` file or use the Google Tag Manager to install as a pixel._
+
+then,
+
+```bash
+$ yarn add react-hubspot-tracking-code-hook
+# or
+$ npm install react-hubspot-tracking-code-hook
+```
+
+## How to use
+
+This library is using the global function `window._hsq` that's initialized from HubSpot tracking code.
+
+#### Basic
+
+```typescript jsx
+import React from "react";
+import { useTrackingCode } from "react-hubspot-tracking-code-hook";
+
+const App = () => {
+  const { setPathPageView, setIdentity } = useTrackingCode();
+
+  setPathPageView("/home");
+
+  setIdentity("your-email@provider.com");
+
+  return <div>My app</div>;
+};
+```
+
+## API
+
+`useTrackingCode` provides the functions from HubSpot tracking code;
+
+| Name               | Params                                     | Required       | Info                                                                                                                                                                                                                                                                                                                                             |
+| ------------------ | ------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `setPathPageView`  | `pathName: string`                         | **YES**        | Set the path to the current page will be treated. This function should be used to update the current page whenever a page is loaded. After using this function to update the path, it will call the `setTrackPageView` function to track the view of the current page.                                                                           |
+| `setTrackPageView` |                                            |                | This function is called when the tracking code is loaded on a page, but you can manually call this function to track subsequent views in a single page application.                                                                                                                                                                              |
+| `setIdentity`      | `(email: string, otherProperties: object)` | **email: YES** | This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. |
+
+## License
+
+`react-hubspot-tracking-code-hook` is under MIT License
 
 ## Contributors ✨
 

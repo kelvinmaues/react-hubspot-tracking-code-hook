@@ -1,9 +1,9 @@
 {
   "name": "react-hubspot-tracking-code-hook",
-  "version": "1.0.0",
-  "repository": "https://github.com/kelvinmaues/react-hubspot-tracking-code-hook.git",
-  "homepage": "https://github.com/elgorditosalsero/react-gtm-hook#readme",
   "author": "Kelvin Maues <kgmdeveloper@gmail.com>",
+  "version": "1.0.0",
+  "repository": "https://github.com/kelvinmaues/react-hubspot-tracking-code-hook",
+  "homepage": "https://github.com/elgorditosalsero/react-hubspot-tracking-code-hook#readme",
   "license": "MIT",
   "keywords": [
     "react",
@@ -12,9 +12,10 @@
     "hubspot hook",
     "hubspot tracking code",
     "tracking code",
-    "hubspot use tracking code"
+    "hubspot tracking code hook",
+    "react hubspot tracking code hook"
   ],
-  "description": "The HubSpot tracking code function as hook to use in your React project (SPA) with all the functions available in the HubSpot Tracking code API documentation.",
+  "description": "The HubSpot tracking code function as a hook to use in your React project (SPA) with all the functions available in the HubSpot Tracking code API documentation.",
   "main": "dist/index.js",
   "module": "dist/react-hubspot-tracking-code-hook.esm.js",
   "typings": "dist/index.d.ts",

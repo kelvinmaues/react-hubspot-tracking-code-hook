@@ -1,10 +1,15 @@
 # React HubSpot Tracking Code Hook
 
+<div style="display: flex; justify-content:space-between; width: 55%">
+
 [![npm](https://img.shields.io/npm/dt/react-hubspot-tracking-code-hook.svg?style=flat-square)](https://www.npmjs.com/package/react-hubspot-tracking-code-hook)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+</div>
 
 A custom hook to use the HubSpot Tracking Code API function.
 
@@ -17,6 +22,7 @@ With this custom hook, you can easily use the [HubSpot Tracking Code API](https:
 - [x] Identify a visitor
 
 ## Next features
+
 - [ ] Track events - Events JavaScript API
 - [ ] Remove cookies
 - [ ] Get privacy consent status

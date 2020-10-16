@@ -5,7 +5,9 @@
 [![npm](https://img.shields.io/npm/dt/react-hubspot-tracking-code-hook.svg?style=flat-square)](https://www.npmjs.com/package/react-hubspot-tracking-code-hook)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </div>
 
@@ -80,12 +82,12 @@ const App = () => {
 
 `useTrackingCode` provides the functions from HubSpot tracking code;
 
-| Name               | Params                                     | Required       | Info                                                                                                                                                                                                                                                                                                                                             |
-| ------------------ | ------------------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `setPathPageView`  | `pathName: string`                         | **YES**        | Set the path to the current page will be treated. This function should be used to update the current page whenever a page is loaded. After using this function to update the path, it will call the `setTrackPageView` function to track the view of the current page.                                                                           |
-| `setTrackPageView` |                                            |                | This function is called when the tracking code is loaded on a page, but you can manually call this function to track subsequent views in a single page application.                                                                                                                                                                              |
-| `setIdentity`      | `(email: string, otherProperties: object)` | **email: YES** | This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. |
-| `setTrackEvent`      | `({eventId: string, value: number | string})` | **eventId: YES** |  This function is used to track an event using JavaScript and HubSpot's tracking code. You can use events to track specific activities completed by visitors on your site. Tracked events can show up in contacts' timelines.|
+| Name               | Params                                        | Required         | Info                                                                                                                                                                                                                                                                                                                                             |
+| ------------------ | --------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `setPathPageView`  | `pathName: string`                            | **YES**          | Set the path to the current page will be treated. This function should be used to update the current page whenever a page is loaded. After using this function to update the path, it will call the `setTrackPageView` function to track the view of the current page.                                                                           |
+| `setTrackPageView` |                                               |                  | This function is called when the tracking code is loaded on a page, but you can manually call this function to track subsequent views in a single page application.                                                                                                                                                                              |
+| `setIdentity`      | `(email: string, otherProperties: object)`    | **email: YES**   | This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. |
+| `setTrackEvent`    | `({eventId: string, value: number | string})` | **eventId: YES** | This function is used to track an event using JavaScript and HubSpot's tracking code. You can use events to track specific activities completed by visitors on your site. Tracked events can show up in contacts' timelines.                                                                                                                     |
 
 ## License
 

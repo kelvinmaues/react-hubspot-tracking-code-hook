@@ -18,3 +18,11 @@ export type IMethodParam =
 export type IPropsUseTrackingCode = {
   initialPath: string;
 };
+
+/**
+ * The props to track event function
+ */
+export type IPropsUseSetTrackEvent = {
+  eventId: string;
+  value: number | string;
+};

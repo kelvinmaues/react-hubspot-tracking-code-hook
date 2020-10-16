@@ -24,5 +24,5 @@ export type IPropsUseTrackingCode = {
  */
 export type IPropsUseSetTrackEvent = {
   eventId: string;
-  value: number | string;
+  value?: number | string;
 };

@@ -1,4 +1,4 @@
-import { IMethodParam } from "../models";
+import { IMethodParam, IPropsUseSetTrackEvent } from "../models";
 
 export type IPushParams = [IMethodParam, (string | object)?];
 
@@ -15,6 +15,7 @@ export type IUseTrackingCode = {
   setPathPageView: (path: string) => void;
   setTrackPageView: () => void;
   setIdentity: (email: string, customPropertities?: {}) => void;
+  setTrackEvent: ({ eventId, value }: IPropsUseSetTrackEvent) => void;
 };
 
 const useTrackingCode = (): IUseTrackingCode => {
@@ -41,7 +42,17 @@ const useTrackingCode = (): IUseTrackingCode => {
     ]);
   };
 
-  return { setPathPageView, setTrackPageView, setIdentity };
+  const setTrackEvent = ({ eventId, value }: IPropsUseSetTrackEvent) => {
+    _hsq.push([
+      "trackEvent",
+      {
+        id: eventId,
+        value,
+      },
+    ]);
+  };
+
+  return { setPathPageView, setTrackPageView, setIdentity, setTrackEvent };
 };
 
 export default useTrackingCode;

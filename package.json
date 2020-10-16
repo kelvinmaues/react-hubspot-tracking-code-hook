@@ -1,9 +1,9 @@
 {
   "name": "react-hubspot-tracking-code-hook",
   "author": "Kelvin Maues <kgmdeveloper@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/kelvinmaues/react-hubspot-tracking-code-hook",
-  "homepage": "https://github.com/elgorditosalsero/react-hubspot-tracking-code-hook#readme",
+  "homepage": "https://github.com/kelvinmaues/react-hubspot-tracking-code-hook#readme",
   "license": "MIT",
   "keywords": [
     "react",

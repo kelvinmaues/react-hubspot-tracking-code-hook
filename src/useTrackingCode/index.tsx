@@ -1,12 +1,5 @@
 import { IMethodParam } from "../models";
 
-/**
- * TODO:
- * [] - Add function addPrivacyConsentListener to check consent status of the visitor
- * [] - Add function revokeCookieConsent to remove the consent status of the visitor
- * [] - Add function doNotTrack to prevent all tracking by the HubSpot tracking code
- */
-
 export type IPushParams = [IMethodParam, (string | object)?];
 
 declare global {

@@ -18,10 +18,10 @@ With this custom hook, you can easily use the [HubSpot Tracking Code API](https:
 - [x] Set Page Path
 - [x] Track Page View
 - [x] Identify a visitor
+- [x] Track events - Events JavaScript API
 
 ## Next features
 
-- [ ] Track events - Events JavaScript API
 - [ ] Remove cookies
 - [ ] Get privacy consent status
 - [ ] Place do not track cookie

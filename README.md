@@ -89,7 +89,7 @@ const App = () => {
 |  `setTrackPageView` 	|  x 	|  x 	|  This function is called when the tracking code is loaded on a page, but you can manually call this function to track subsequent views in a single page application. 	|
 |  `setIdentity` 	|  `(email: string, otherProperties: object)` 	|  **email: YES** 	|  This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. 	|
 |  `setIdentity` 	|  `(email: string, otherProperties: object)` 	|  **email: YES** 	|  This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. 	|
-|  `setTrackEvent` 	|  `{eventId: string, value: number | string}` 	|  **eventId: YES** 	|  This function is used to track an event using JavaScript and HubSpot's tracking code. You can use events to track specific activities completed by visitors on your site. Tracked events can show up in contacts' timelines. 	| 
+|  `setTrackEvent` 	|  `(eventId: string, value: number | string)` 	|  **eventId: YES** 	|  This function is used to track an event using JavaScript and HubSpot's tracking code. You can use events to track specific activities completed by visitors on your site. Tracked events can show up in contacts' timelines. 	| 
 | x | x | x | x |
 
 ## License

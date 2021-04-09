@@ -10,6 +10,7 @@ export type IMethodParam =
   | "addPrivacyConsentListener"
   | "doNotTrack"
   | "addIdentityListener"
+  | "setContentType"
   | "refreshPageHandlers";
 
 /**

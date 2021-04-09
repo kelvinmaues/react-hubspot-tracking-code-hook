@@ -12,6 +12,7 @@ declare global {
  * The shape of the hook
  */
 export type IUseTrackingCode = {
+  setContentType: (contentType: string) => void;
   setPathPageView: (path: string) => void;
   setTrackPageView: () => void;
   setIdentity: (email: string, customPropertities?: {}) => void;
@@ -20,6 +21,10 @@ export type IUseTrackingCode = {
 
 const useTrackingCode = (): IUseTrackingCode => {
   const _hsq = window._hsq || [];
+
+  const setContentType = (contentType: string): void => {
+    _hsq.push(["setContentType", contentType]);
+  };
 
   const setTrackPageView = () => {
     _hsq.push(["trackPageView"]);
@@ -52,7 +57,7 @@ const useTrackingCode = (): IUseTrackingCode => {
     ]);
   };
 
-  return { setPathPageView, setTrackPageView, setIdentity, setTrackEvent };
+  return { setContentType, setPathPageView, setTrackPageView, setIdentity, setTrackEvent };
 };
 
 export default useTrackingCode;

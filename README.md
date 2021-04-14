@@ -21,6 +21,7 @@ With this custom hook, you can easily use the [HubSpot Tracking Code API](https:
 - [x] Track Page View
 - [x] Identify a visitor
 - [x] Track events - Events JavaScript API
+- [x] Additional code to bucket data into HubSpot page types
 
 ## Next features
 
@@ -74,6 +75,8 @@ const App = () => {
 
   setIdentity("your-email@provider.com");
 
+  setContentType("landing-page");
+
   return <div>My app</div>;
 };
 ```
@@ -85,6 +88,7 @@ const App = () => {
 
 |  Names 	|  Params 	|  Required 	|  Info 	|
 |--------------------	|--------------------	|-------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+|  `setContentType` 	|  `contentType: string` 	|  x 	|  Additional code to bucket data into HubSpot page types (standard-page, site-page, landing-page, listing-page, blog-post, or knowledge-article) |
 |  `setPathPageView` 	|  `pathName: string` 	|  **YES** 	|  Set the path to the current page will be treated. This function should be used to update the current page whenever a page is loaded. After using this function to update the path, it will call the `setTrackPageView` function to track the view of the current page. 	|
 |  `setTrackPageView` 	|  x 	|  x 	|  This function is called when the tracking code is loaded on a page, but you can manually call this function to track subsequent views in a single page application. 	|
 |  `setIdentity` 	|  `(email: string, otherProperties: object)` 	|  **email: YES** 	|  This function is used to identify a visitor to your site. The unique identifier is an email address. If there is an existing contact record for that email address, it will be updated. Otherwise, a new contact record will be created. In both cases, the analytics data collected for the visitor will be associated with the contact record. 	|

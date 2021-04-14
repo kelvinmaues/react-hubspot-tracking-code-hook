@@ -19,6 +19,16 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "logankoester",
+      "name": "Logan Koester",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19319?v=4",
+      "profile": "http://logankoester.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

@@ -20,7 +20,7 @@ export type IUseTrackingCode = {
 };
 
 const useTrackingCode = (): IUseTrackingCode => {
-  const _hsq = window._hsq || [];
+  const _hsq = typeof window !== 'undefined' && window._hsq ? window._hsq : [];
 
   const setContentType = (contentType: string): void => {
     _hsq.push(["setContentType", contentType]);

@@ -29,6 +29,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "kylehotchkiss",
+      "name": "Kyle Hotchkiss",
+      "avatar_url": "https://avatars.githubusercontent.com/u/108172?v=4",
+      "profile": "https://www.kylehotchkiss.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

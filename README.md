@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/dt/react-hubspot-tracking-code-hook.svg?style=flat-square)](https://www.npmjs.com/package/react-hubspot-tracking-code-hook)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </div>
 
@@ -107,6 +107,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://kelvinmaues.github.io/"><img src="https://avatars0.githubusercontent.com/u/11196828?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelvin Maues</b></sub></a><br /><a href="https://github.com/kelvinmaues/react-hubspot-tracking-code-hook/commits?author=kelvinmaues" title="Documentation">📖</a> <a href="https://github.com/kelvinmaues/react-hubspot-tracking-code-hook/commits?author=kelvinmaues" title="Code">💻</a></td>
     <td align="center"><a href="http://logankoester.com/"><img src="https://avatars.githubusercontent.com/u/19319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Logan Koester</b></sub></a><br /><a href="https://github.com/kelvinmaues/react-hubspot-tracking-code-hook/commits?author=logankoester" title="Code">💻</a> <a href="https://github.com/kelvinmaues/react-hubspot-tracking-code-hook/commits?author=logankoester" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.kylehotchkiss.com/"><img src="https://avatars.githubusercontent.com/u/108172?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kyle Hotchkiss</b></sub></a><br /><a href="https://github.com/kelvinmaues/react-hubspot-tracking-code-hook/commits?author=kylehotchkiss" title="Code">💻</a></td>
   </tr>
 </table>
 

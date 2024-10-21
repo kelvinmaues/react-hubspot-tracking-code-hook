@@ -17,6 +17,7 @@ export type IUseTrackingCode = {
   setTrackPageView: () => void
   setIdentity: (email: string, customPropertities?: {}) => void
   setTrackEvent: ({ eventId, value }: IPropsUseSetTrackEvent) => void
+  revokeCookieConsent: () => void
 }
 
 const useTrackingCode = (): IUseTrackingCode => {
@@ -57,12 +58,17 @@ const useTrackingCode = (): IUseTrackingCode => {
     ])
   }
 
+  const revokeCookieConsent = () => {
+    _hsq.push(['revokeCookieConsent'])
+  }
+
   return {
     setContentType,
     setPathPageView,
     setTrackPageView,
     setIdentity,
-    setTrackEvent
+    setTrackEvent,
+    revokeCookieConsent,
   }
 }
 
